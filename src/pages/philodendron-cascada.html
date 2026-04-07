@@ -11,8 +11,26 @@
 <link href="../assets/css/base.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="fixed top-0 w-full z-50 bg-[#fbf9f4]/75 backdrop-blur-xl"><nav class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto"><a class="font-noto-serif text-2xl tracking-[0.2em] uppercase" href="index.html">INTEMPORAL</a><a class="font-manrope text-sm uppercase tracking-[0.2em]" href="catalogo.html">Volver al catálogo</a></nav></header>
-<main class="pt-32 pb-24 px-12 max-w-[1920px] mx-auto">
+<header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80 shadow-none">
+<nav class="flex flex-col md:flex-row justify-between md:items-center w-full px-4 sm:px-6 md:px-12 py-4 md:py-6 max-w-[1920px] mx-auto gap-3 md:gap-0">
+<div class="flex items-center justify-between w-full md:w-auto gap-8">
+<a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">INTEMPORAL</a>
+<div class="hidden md:flex items-center gap-8 font-manrope text-lg tracking-tight">
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="index.html">Inicio</a>
+<a class="text-[#18241a] dark:text-[#fbf9f4] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="filosofia.html">Nuestra Filosofía</a>
+</div>
+</div>
+<div class="md:hidden flex w-full flex-wrap gap-3 font-manrope text-[10px] uppercase tracking-[0.15em]">
+<a class="text-[#705a49]" href="index.html">Inicio</a>
+<a class="text-[#18241a] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
+<a class="text-[#705a49]" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49]" href="filosofia.html">Filosofía</a>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-4 sm:px-6 md:px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
 <!-- Hero Section -->
 <section class="mb-16">
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
@@ -26,7 +44,7 @@
 <div class="lg:col-span-1 flex flex-col justify-between">
 <div>
 <div class="inline-flex px-3 py-1 bg-primary/10 text-primary text-xs uppercase tracking-widest font-bold mb-4">Colección Orgánica</div>
-<h1 class="font-noto-serif text-6xl mb-4 leading-tight text-primary">Philodendron Cascada</h1>
+<h1 class="font-noto-serif text-4xl md:text-4xl md:text-6xl mb-4 leading-tight text-primary">Philodendron Cascada</h1>
 <p class="font-manrope text-on-surface-variant text-lg leading-relaxed mb-8">Trazos colgantes que aportan movimiento y profundidad en estanterías elevadas.</p>
 <div class="mb-8 p-6 bg-surface-container rounded-lg">
 <p class="font-manrope text-4xl text-primary font-bold">MXN $1,980</p>
@@ -122,7 +140,7 @@
 <p class="font-manrope text-lg italic text-on-surface-variant leading-relaxed">
 "Crecimiento dinámico que aporta movimiento a estanterías altas. El Philodendron Cascada es perfecto para crear efecto de cascada en muros verde o estanterías. Crece rápidamente y es prácticamente infalible."
 </p>
-<footer class="font-manrope text-sm text-secondary mt-4">— Equipo Intemporal</footer>
+<p class="font-manrope text-sm text-secondary mt-4">— Equipo Intemporal</p>
 </blockquote>
 </section>
 
@@ -131,5 +149,33 @@
 <a href="catalogo.html" class="font-manrope text-sm uppercase tracking-widest text-primary hover:text-primary-container transition-colors">← Volver al Catálogo</a>
 </section>
 </main>
+<footer class="w-full rounded-none border-t-0 bg-[#fbf9f4] dark:bg-[#18241a] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 px-4 sm:px-6 md:px-12 py-14 md:py-20 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col justify-between h-full">
+<span class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</span>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] mt-8">© 2026 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Explorar</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="index.html">Inicio</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">Pinterest</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Servicio</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="envios.html">Envíos</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="terminos.html">Términos</a>
+</div>
+</div>
+<div class="flex flex-col justify-end items-start md:items-end text-left md:text-right">
+<p class="font-noto-serif text-lg italic text-[#18241a] max-w-xs mb-4">"Donde la arquitectura encuentra sus pulmones."</p>
+<div class="w-full h-px bg-outline-variant opacity-30 my-4"></div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Atención Privada: concierge@intemporal.botany</p>
+</div>
+</div>
+</footer>
+
 </body>
 </html>

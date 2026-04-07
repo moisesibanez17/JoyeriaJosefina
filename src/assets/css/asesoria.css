@@ -1,0 +1,65 @@
+[data-quiz-meter] {
+  border: 1px solid rgba(24, 36, 26, 0.1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .asesoria-page main > section:first-of-type h1 {
+    font-size: clamp(3.35rem, 6vw, 4.75rem);
+    line-height: 1.04;
+  }
+
+  .asesoria-page main > section:first-of-type p {
+    max-width: 58ch;
+  }
+
+  .asesoria-page main > section:nth-of-type(2) .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .asesoria-page [data-quiz-meter] {
+    top: 6.5rem;
+  }
+
+  .asesoria-page [data-quiz-steps] {
+    row-gap: 6rem;
+  }
+
+  .asesoria-page [data-quiz-steps] h4 {
+    max-width: 32ch;
+  }
+
+  .asesoria-page [data-quiz-steps] > div:nth-child(1) .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .asesoria-page [data-quiz-steps] > div:nth-child(1) .grid > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .asesoria-page header .hidden.md\:flex {
+    display: none !important;
+  }
+
+  .asesoria-page header .md\:hidden {
+    display: flex !important;
+  }
+
+  .asesoria-page [data-quiz-meter] {
+    top: 7.25rem;
+  }
+
+  .asesoria-page main > section:nth-of-type(3) h4 {
+    max-width: 24ch;
+  }
+
+  .asesoria-page label[for='upload'] {
+    min-height: 11.5rem;
+  }
+
+  .asesoria-page textarea {
+    font-size: 16px;
+  }
+
+}

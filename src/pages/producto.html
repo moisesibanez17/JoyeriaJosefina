@@ -11,9 +11,9 @@
 <link href="../assets/css/base.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface selection:bg-primary-fixed selection:text-primary">
-<header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80">
-<div class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
-<div class="flex items-center gap-8">
+<header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80 shadow-none">
+<div class="flex flex-col md:flex-row justify-between md:items-center w-full px-4 sm:px-6 md:px-12 py-4 md:py-6 max-w-[1920px] mx-auto gap-3 md:gap-0">
+<div class="flex items-center justify-between w-full md:w-auto gap-8">
 <a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">INTEMPORAL</a>
 <div class="hidden md:flex items-center gap-8 font-manrope text-lg tracking-tight">
 <a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="index.html">Inicio</a>
@@ -22,13 +22,19 @@
 <a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="filosofia.html">Nuestra Filosofía</a>
 </div>
 </div>
+<div class="md:hidden flex w-full flex-wrap gap-3 font-manrope text-[10px] uppercase tracking-[0.15em]">
+<a class="text-[#705a49]" href="index.html">Inicio</a>
+<a class="text-[#18241a] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
+<a class="text-[#705a49]" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49]" href="filosofia.html">Filosofía</a>
+</div>
 </div>
 </header>
-<main class="pt-32 pb-24">
-<section class="max-w-[1920px] mx-auto px-12">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<main class="pt-28 md:pt-32 pb-16 md:pb-24">
+<section class="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-start">
 <div class="lg:col-span-7 grid grid-cols-12 gap-4">
-<div class="col-span-12 h-[819px] bg-surface-container-low overflow-hidden">
+<div class="col-span-12 h-[56vh] md:h-[819px] bg-surface-container-low overflow-hidden">
 <img class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Strelitzia Nicolai Bird of Paradise plant in a luxury industrial loft with tall ceilings and large windows, soft morning light hitting giant green leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVTLQBBobPrjImuS9RtSuDmodB-gh2GXVScDC3lhbXJ1M5QoEfpQvkwnl3LY9FWq3ccaK9V5GBi-N29_BXJliINK5Xq8aKNNvxPWWfeNK2qDwvIBdSW5tU7EMvTK929CPI5EQCZn1pglT44faonpQS7iiXo2awCHCq0a86_lfrxcQHT8JO3qZ50mqIOzKJbTEeT09A_K1-DoQKkrzC8DKYyO-rIwV-hVcPB8cW7qgHjwcaPpJYrv-nruQ-LRS5kY0s3fygmBnZGoU"/>
 </div>
 <div class="col-span-6 aspect-square bg-surface-container mt-4">
@@ -38,11 +44,11 @@
 <img class="w-full h-full object-cover" data-alt="monolithic dark anthracite stone planter with textured surface standing on a polished concrete floor in a gallery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkoqS4VbDEjLWbDvk7fLp2WEXn0lqwWTL7aU1vTKs4FzIlBO9bQ6LcNW-mu2YRRX9fpshAgD28L_gxaDn4kDqO3ZX1wOP8hwLZG98lB_nMQu5WLMUYAxdf5b2Yf0FJtkg0PsvZktVq5c9NhhfEHf-yPEP2gZ1ZeCUg1FpbNhGQrtlI7bd9WBi3XJTeK-bHvcC3tsUf1ikZshFLv7P1w2-f6u1AFjnO_xETRL_mTOhSvDsvbN1HThDgfgcvfKA_SeVGynd9JgYELaw"/>
 </div>
 </div>
-<div class="lg:col-span-5 lg:sticky lg:top-32 space-y-12">
+<div class="lg:col-span-5 lg:sticky lg:top-32 space-y-8 md:space-y-12">
 <header>
 <span class="font-manrope text-[10px] uppercase tracking-[0.25em] text-secondary mb-4 block">STRELITZIACEAE</span>
-<h1 class="font-noto-serif text-5xl lg:text-7xl leading-tight text-primary">Strelitzia Nicolai <br/> <span class="italic text-secondary font-light">'Escultura de Suelo'</span></h1>
-<p class="mt-8 font-manrope text-xl tracking-wide text-primary">MXN $8,990</p>
+<h1 class="font-noto-serif text-3xl sm:text-4xl lg:text-7xl leading-tight text-primary">Strelitzia Nicolai <br/> <span class="italic text-secondary font-light">'Escultura de Suelo'</span></h1>
+<p class="mt-5 md:mt-8 font-manrope text-lg md:text-xl tracking-wide text-primary">MXN $8,990</p>
 </header>
 <div class="space-y-8">
 <div class="flex items-start gap-4 pb-6 border-b border-outline-variant/30">
@@ -81,17 +87,17 @@
 <span class="material-symbols-outlined text-primary transition-transform group-hover:rotate-45" data-icon="add">add</span>
 </div>
 </div>
-<button class="w-full bg-primary text-white py-6 font-manrope text-sm uppercase tracking-[0.2em] hover:bg-primary-container transition-colors duration-300">
+<button class="w-full bg-primary text-white py-4 md:py-6 font-manrope text-xs md:text-sm uppercase tracking-[0.16em] md:tracking-[0.2em] hover:bg-primary-container transition-colors duration-300">
                         Habitar este Ejemplar
                     </button>
 </div>
 </div>
 </section>
-<section class="mt-32 bg-surface-container-low py-32">
-<div class="max-w-[1920px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-24">
+<section class="mt-16 md:mt-32 bg-surface-container-low py-16 md:py-32">
+<div class="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24">
 <div class="space-y-8">
-<h2 class="font-noto-serif text-4xl text-primary leading-tight">La Anatomía de una <br/> Presencia Escultórica</h2>
-<div class="space-y-6 font-manrope text-on-surface-variant leading-relaxed text-lg max-w-lg">
+<h2 class="font-noto-serif text-3xl md:text-4xl text-primary leading-tight">La Anatomía de una <br/> Presencia Escultórica</h2>
+<div class="space-y-6 font-manrope text-on-surface-variant leading-relaxed text-base md:text-lg max-w-lg">
 <p>
                             La Strelitzia Nicolai no es simplemente una planta; es una declaración arquitectónica. Sus hojas, que pueden alcanzar dimensiones monumentales, poseen una estructura rígida que se va fragmentando con el tiempo, creando una textura orgánica única que respira con el movimiento del aire.
                         </p>
@@ -106,8 +112,8 @@
 </div>
 </div>
 </section>
-<section class="max-w-[1920px] mx-auto px-12 py-32">
-<div class="flex justify-between items-end mb-16">
+<section class="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 py-16 md:py-32">
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-end mb-10 md:mb-16 gap-4">
 <h3 class="font-noto-serif text-3xl text-primary">Ejemplares Relacionados</h3>
 <a class="font-manrope text-xs uppercase tracking-widest border-b border-primary pb-1" href="catalogo.html">Ver Catálogo Completo</a>
 </div>
@@ -151,38 +157,34 @@
 </div>
 </section>
 </main>
-<footer class="bg-[#fbf9f4] dark:bg-[#18241a] grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full mt-auto">
-<div class="space-y-8">
-<h2 class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</h2>
-<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] leading-loose">
-                © 2024 INTEMPORAL DIGITAL CONSERVATORY.<br/>
-                ARCHITECTURAL INTEGRITY IN BOTANY.
-            </p>
+<footer class="w-full rounded-none border-t-0 bg-[#fbf9f4] dark:bg-[#18241a] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 px-4 sm:px-6 md:px-12 py-14 md:py-20 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col justify-between h-full">
+<span class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</span>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] mt-8">© 2026 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.</p>
 </div>
 <div class="grid grid-cols-2 gap-8">
-<div class="space-y-4 flex flex-col">
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="index.html">Inicio</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Explorar</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="index.html">Inicio</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">Pinterest</a>
 </div>
-<div class="space-y-4 flex flex-col">
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="envios.html">Envíos</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] dark:hover:text-[#fbf9f4] transition-colors" href="terminos.html">Términos</a>
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Servicio</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="envios.html">Envíos</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="terminos.html">Términos</a>
 </div>
 </div>
-<div class="flex flex-col md:items-end justify-between">
-<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Curaduría desde Barcelona</p>
-<div class="mt-8 flex gap-4">
-<div class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center">
-<span class="material-symbols-outlined text-xs" data-icon="language">language</span>
-</div>
-<div class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center">
-<span class="material-symbols-outlined text-xs" data-icon="shield">shield</span>
-</div>
+<div class="flex flex-col justify-end items-start md:items-end text-left md:text-right">
+<p class="font-noto-serif text-lg italic text-[#18241a] max-w-xs mb-4">"Donde la arquitectura encuentra sus pulmones."</p>
+<div class="w-full h-px bg-outline-variant opacity-30 my-4"></div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Atención Privada: concierge@intemporal.botany</p>
 </div>
 </div>
 </footer>
+
 <script src="../assets/js/base-motion.js"></script>
 <script src="../assets/js/producto.js"></script>
 </body></html>

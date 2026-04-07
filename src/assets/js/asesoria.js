@@ -1,6 +1,6 @@
 (() => {
   document.addEventListener('DOMContentLoaded', () => {
-    const quizContainer = document.querySelector('.space-y-32');
+    const quizContainer = document.querySelector('[data-quiz-steps]') || document.querySelector('.space-y-16, .space-y-32');
     if (!quizContainer) {
       return;
     }
@@ -9,7 +9,8 @@
     let answered = 0;
 
     const meter = document.createElement('div');
-    meter.className = 'sticky top-24 z-40 mb-10 bg-surface/80 backdrop-blur-md p-4';
+    meter.className = 'sticky top-28 md:top-24 z-40 mb-10 bg-surface/80 backdrop-blur-md px-3 py-3 md:p-4';
+    meter.setAttribute('data-quiz-meter', '');
     meter.innerHTML = '<div class="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-secondary"><span>Progreso Curatorial</span><span data-meter-label>0 / 5</span></div><div class="mt-3 h-[3px] bg-surface-container-high"><div data-meter-bar class="h-full bg-primary" style="width:0%"></div></div>';
     quizContainer.parentElement.insertBefore(meter, quizContainer);
 
@@ -58,7 +59,7 @@
       });
     }
 
-    const submitButton = document.querySelector('button.bg-primary.text-white.px-24');
+    const submitButton = document.querySelector('[data-quiz-submit]');
     if (submitButton) {
       submitButton.disabled = true;
       submitButton.style.opacity = '0.45';

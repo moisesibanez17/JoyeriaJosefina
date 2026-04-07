@@ -4,6 +4,28 @@
   document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('js-motion-ready');
 
+    const fixedHeader = document.querySelector('header.fixed');
+    const main = document.querySelector('main');
+    const initialMainPaddingTop = main ? parseFloat(window.getComputedStyle(main).paddingTop) || 0 : 0;
+
+    const syncMainOffsetWithHeader = () => {
+      if (!fixedHeader || !main) {
+        return;
+      }
+      const headerHeight = Math.ceil(fixedHeader.getBoundingClientRect().height);
+      const safeOffset = headerHeight + 16;
+      const resolvedPadding = Math.max(initialMainPaddingTop, safeOffset);
+      main.style.paddingTop = resolvedPadding + 'px';
+    };
+
+    syncMainOffsetWithHeader();
+    window.addEventListener('resize', syncMainOffsetWithHeader);
+    window.addEventListener('orientationchange', syncMainOffsetWithHeader);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', syncMainOffsetWithHeader);
+      window.visualViewport.addEventListener('scroll', syncMainOffsetWithHeader);
+    }
+
     const progress = document.createElement('div');
     progress.setAttribute('data-live-progress', '');
     document.body.appendChild(progress);
@@ -24,16 +46,20 @@
       el.style.transitionDelay = Math.min((index % 8) * 60, 360) + 'ms';
     });
 
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.18, rootMargin: '0px 0px -5% 0px' });
+    if (!('IntersectionObserver' in window)) {
+      revealTargets.forEach((el) => el.classList.add('is-visible'));
+    } else {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
 
-    revealTargets.forEach((el) => revealObserver.observe(el));
+      revealTargets.forEach((el) => revealObserver.observe(el));
+    }
 
     const tiltCards = Array.from(document.querySelectorAll('.group'));
     tiltCards.forEach((card) => {

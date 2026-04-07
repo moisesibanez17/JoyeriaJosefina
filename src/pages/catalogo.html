@@ -14,8 +14,8 @@
 <body class="bg-surface text-on-surface antialiased">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80 shadow-none">
-<nav class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
-<div class="flex items-center gap-8">
+<nav class="flex flex-col md:flex-row justify-between md:items-center w-full px-4 sm:px-6 md:px-12 py-4 md:py-6 max-w-[1920px] mx-auto gap-3 md:gap-0">
+<div class="flex items-center justify-between w-full md:w-auto gap-8">
 <a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">
                 INTEMPORAL
             </a>
@@ -26,41 +26,47 @@
 <a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="filosofia.html">Nuestra Filosofía</a>
 </div>
 </div>
+<div class="md:hidden flex w-full flex-wrap gap-3 font-manrope text-[10px] uppercase tracking-[0.15em]">
+<a class="text-[#705a49]" href="index.html">Inicio</a>
+<a class="text-[#18241a] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
+<a class="text-[#705a49]" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49]" href="filosofia.html">Filosofía</a>
+</div>
  </nav>
 </header>
-<main class="pt-32 pb-20">
+<main class="pt-28 md:pt-32 pb-16 md:pb-20">
 <!-- Hero / Section Intro -->
-<section class="px-12 mb-24 max-w-[1920px] mx-auto">
+<section class="px-4 sm:px-6 md:px-12 mb-14 md:mb-24 max-w-[1920px] mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
 <div class="md:col-span-7">
 <span class="font-label text-[10px] uppercase tracking-[0.3em] text-secondary mb-4 block">Conservatorio Digital</span>
-<h1 class="text-6xl md:text-8xl leading-[1.1] text-primary">Catálogo <br/><span class="italic">Botánico</span></h1>
+<h1 class="text-4xl sm:text-5xl md:text-8xl leading-[1.1] text-primary">Catálogo <br/><span class="italic">Botánico</span></h1>
 </div>
 <div class="md:col-span-5 pb-4">
-<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed">
+<p class="font-body text-base md:text-lg text-on-surface-variant max-w-md leading-relaxed">
                         Una curaduría de especímenes vivos seleccionados por su integridad arquitectónica y su capacidad para transformar el espacio habitado en una galería de vida.
                     </p>
 </div>
 </div>
 </section>
 <!-- Collection Filters -->
-<section class="px-12 mb-16 max-w-[1920px] mx-auto">
+<section class="px-4 sm:px-6 md:px-12 mb-12 md:mb-16 max-w-[1920px] mx-auto">
 <div class="flex flex-wrap gap-4 border-b border-outline-variant/20 pb-8">
-<button class="px-8 py-3 bg-primary text-on-primary font-label text-xs uppercase tracking-widest">Todas las Especies</button>
-<button class="px-8 py-3 bg-surface-container-high text-on-surface font-label text-xs uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Tierra</button>
-<button class="px-8 py-3 bg-surface-container-high text-on-surface font-label text-xs uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Orgánica</button>
-<button class="px-8 py-3 bg-surface-container-high text-on-surface font-label text-xs uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Estructural</button>
+<button class="w-full sm:w-auto px-6 py-3 bg-primary text-on-primary font-label text-[11px] uppercase tracking-widest">Todas las Especies</button>
+<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Tierra</button>
+<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Orgánica</button>
+<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Estructural</button>
 </div>
 </section>
 <!-- Grid de Catálogo -->
-<section class="px-12 max-w-[1920px] mx-auto">
+<section class="px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
 <!-- Colección Tierra -->
 <div class="mb-32">
-<div class="flex items-baseline gap-4 mb-12">
-<h2 class="text-4xl">Colección Tierra</h2>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12">
+<h2 class="text-3xl md:text-4xl">Colección Tierra</h2>
 <span class="font-body italic text-secondary text-lg">— Calidez mineral y texturas de barro.</span>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-14 md:gap-y-24">
 <!-- Product Card 1 -->
 <div>
 <div class="aspect-[4/5] bg-surface-container-low mb-8 relative">
@@ -135,9 +141,9 @@
 </div>
 <!-- Colección Orgánica (Lush Greens) -->
 <div class="mb-32">
-<div class="flex items-baseline gap-4 mb-12 justify-end text-right">
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12 justify-end text-right">
 <span class="font-body italic text-secondary text-lg">Vitalidad exuberante y profundidad —</span>
-<h2 class="text-4xl">Colección Orgánica</h2>
+<h2 class="text-3xl md:text-4xl">Colección Orgánica</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 <!-- Product Card 3 -->
@@ -196,8 +202,8 @@
 </div>
 <!-- Colección Estructural (Mineral/Stone) -->
 <div class="mb-32">
-<div class="flex items-baseline gap-4 mb-12">
-<h2 class="text-4xl">Colección Estructural</h2>
+<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12">
+<h2 class="text-3xl md:text-4xl">Colección Estructural</h2>
 <span class="font-body italic text-secondary text-lg">— Siluetas rígidas y texturas minerales.</span>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -250,54 +256,45 @@
 </div>
 </section>
 <!-- Seccion CTA de Asesoria -->
-<section class="mt-32 px-12 max-w-[1920px] mx-auto">
-<div class="bg-[#f0eee9] py-32 px-12 md:px-24 text-center relative overflow-hidden">
+<section class="mt-20 md:mt-32 px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
+<div class="bg-[#f0eee9] py-16 md:py-32 px-6 md:px-24 text-center relative overflow-hidden">
 <div class="relative z-10">
 <span class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-6 block">Asesoría Personalizada</span>
-<h2 class="text-5xl md:text-7xl mb-10 max-w-4xl mx-auto leading-tight">Curamos el alma botánica de tu <span class="italic">santuario</span>.</h2>
-<p class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+<h2 class="text-3xl sm:text-4xl md:text-7xl mb-8 md:mb-10 max-w-4xl mx-auto leading-tight">Curamos el alma botánica de tu <span class="italic">santuario</span>.</h2>
+<p class="font-body text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 md:mb-12">
                         Nuestros expertos en diseño biofílico te ayudan a seleccionar las especies que mejor se adaptan a la arquitectura y luz de tu espacio.
                     </p>
-<button class="px-12 py-5 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.3em] hover:opacity-90 transition-opacity">Contactar con un Asesor</button>
+<button class="w-full sm:w-auto px-10 py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.22em] md:tracking-[0.3em] hover:opacity-90 transition-opacity">Contactar con un Asesor</button>
 </div>
 <!-- Abstract decorative element -->
 <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full border border-outline-variant/30 opacity-50 pointer-events-none"></div>
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-[#fbf9f4] dark:bg-[#18241a] w-full rounded-none border-t-0">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full mt-auto max-w-[1920px] mx-auto">
-<div class="flex flex-col gap-8">
-<div class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</div>
-<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] leading-relaxed">
-                    © 2024 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.
-                </p>
+<footer class="w-full rounded-none border-t-0 bg-[#fbf9f4] dark:bg-[#18241a] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 px-4 sm:px-6 md:px-12 py-14 md:py-20 w-full max-w-[1920px] mx-auto">
+<div class="flex flex-col justify-between h-full">
+<span class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</span>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] mt-8">© 2026 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.</p>
 </div>
 <div class="grid grid-cols-2 gap-8">
 <div class="flex flex-col gap-4">
-<span class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#18241a] font-bold">Menú</span>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="catalogo.html">Catálogo</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="asesoria.html">Asesoría</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="filosofia.html">Nuestra Filosofía</a>
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Explorar</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="index.html">Inicio</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">Pinterest</a>
 </div>
 <div class="flex flex-col gap-4">
-<span class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#18241a] font-bold">Info</span>
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Servicio</span>
 <a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
 <a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="envios.html">Envíos</a>
 <a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="terminos.html">Términos</a>
 </div>
 </div>
-<div class="flex flex-col gap-8">
-<span class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#18241a] font-bold">Boletín</span>
-<div class="flex border-b border-[#18241a]/20 pb-2">
-<input class="bg-transparent border-none w-full font-manrope text-[10px] focus:ring-0 placeholder:text-[#705a49]/50" placeholder="TU CORREO" type="email"/>
-<button class="text-[#18241a]"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
-</div>
-<div class="flex gap-6">
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a]" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a]" href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
-</div>
+<div class="flex flex-col justify-end items-start md:items-end text-left md:text-right">
+<p class="font-noto-serif text-lg italic text-[#18241a] max-w-xs mb-4">"Donde la arquitectura encuentra sus pulmones."</p>
+<div class="w-full h-px bg-outline-variant opacity-30 my-4"></div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Atención Privada: concierge@intemporal.botany</p>
 </div>
 </div>
 </footer>
