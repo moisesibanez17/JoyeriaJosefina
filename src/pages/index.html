@@ -1,29 +1,144 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="light" lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/x-icon" href="../img/icon.jpg"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="0; url=home.html" />
-  <title>INTEMPORAL - Navegación de Páginas</title>
-  <link href="../assets/css/index.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Noto+Serif:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<link rel="icon" type="image/x-icon" href="../img/icon.jpg"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intemporal | Inicio</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../assets/js/tailwind-config.js"></script>
+<link href="../assets/css/base.css" rel="stylesheet"/>
 </head>
-<body>
-  <main>
-    <h1>INTEMPORAL</h1>
-    <p>Redirigiendo a Inicio. Si no ocurre automáticamente, abre el siguiente enlace.</p>
-    <ul>
-      <li><a href="./home.html">Ir a Inicio</a></li>
-      <li><a href="./catalogo.html">Catálogo - Interacción Táctil</a></li>
-      <li><a href="./producto.html">Detalle de Producto - Experiencia Premium</a></li>
-      <li><a href="./asesoria.html">Asesoría - Flujo Guiado</a></li>
-      <li><a href="./sostenibilidad.html">Sostenibilidad - Compromiso Intemporal</a></li>
-      <li><a href="./envios.html">Envíos - Logística Protegida</a></li>
-      <li><a href="./terminos.html">Términos - Condiciones de Compra</a></li>
-    </ul>
-  </main>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80 shadow-none">
+<nav class="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">INTEMPORAL</a>
+<div class="hidden md:flex items-center gap-8 font-manrope text-lg tracking-tight">
+<a class="text-[#18241a] dark:text-[#fbf9f4] border-b border-[#18241a] pb-1" href="index.html">Inicio</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="catalogo.html">Catálogo</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="filosofia.html">Nuestra Filosofía</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-32">
+<section class="relative min-h-[88vh] px-12 py-24 flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Interior premium con plantas" class="w-full h-full object-cover brightness-90" src="../img/fondo.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#18241a]/80 via-[#18241a]/45 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="font-manrope text-xs uppercase tracking-[0.32em] text-[#d7ccbf] mb-6 block">Curaduría Botánica de Autor</span>
+<h1 class="font-noto-serif text-6xl md:text-8xl leading-[0.95] text-[#fbf9f4] mb-8">Un hogar con presencia viva y elegancia intemporal</h1>
+<p class="font-manrope text-lg md:text-2xl text-[#e9e2d8] max-w-3xl leading-relaxed mb-12">Seleccionamos piezas botánicas que dialogan con arquitectura contemporánea para crear ambientes sofisticados, serenos y memorables.</p>
+<div class="flex flex-wrap gap-4">
+<a class="px-10 py-4 bg-[#fbf9f4] text-[#18241a] font-manrope font-bold text-xs uppercase tracking-[0.24em] hover:bg-[#f0eee9] transition-colors" href="catalogo.html">Explorar Colección</a>
+<a class="px-10 py-4 border border-[#fbf9f4]/70 text-[#fbf9f4] font-manrope font-bold text-xs uppercase tracking-[0.24em] hover:bg-[#fbf9f4]/10 transition-colors" href="asesoria.html">Solicitar Asesoría</a>
+</div>
+</div>
+</section>
+<section class="px-12 py-24 max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-7">
+<span class="font-manrope text-xs uppercase tracking-[0.3em] text-secondary mb-4 block">Inicio de Plataforma</span>
+<h2 class="font-noto-serif text-5xl md:text-6xl text-primary leading-tight mb-8">Una entrada diseñada para decidir con claridad</h2>
+<p class="font-manrope text-lg text-on-surface-variant leading-relaxed max-w-3xl">Esta portada concentra la experiencia esencial de Intemporal: acceso inmediato al catálogo, conexión con asesoría especializada y una narrativa editorial que eleva la compra a una experiencia de diseño interior.</p>
+</div>
+<div class="lg:col-span-5 grid grid-cols-1 gap-5">
+<div class="bg-surface-container-low border border-outline-variant/30 p-8">
+<h3 class="font-noto-serif text-2xl text-primary mb-3">Catálogo Curado</h3>
+<p class="font-manrope text-on-surface-variant">Piezas seleccionadas por proporción, carácter y armonía arquitectónica.</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/30 p-8">
+<h3 class="font-noto-serif text-2xl text-primary mb-3">Asesoría Privada</h3>
+<p class="font-manrope text-on-surface-variant">Recomendaciones por espacio, luz y estilo para una integración real.</p>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/30 p-8">
+<h3 class="font-noto-serif text-2xl text-primary mb-3">Filosofía de Marca</h3>
+<p class="font-manrope text-on-surface-variant">Una visión botánica donde estética y permanencia evolucionan juntas.</p>
+</div>
+</div>
+</section>
+<section class="px-12 pb-24 max-w-[1920px] mx-auto">
+<div class="flex items-end justify-between mb-10 gap-6">
+<div>
+<span class="font-manrope text-xs uppercase tracking-[0.3em] text-secondary mb-3 block">Selección Visual</span>
+<h2 class="font-noto-serif text-4xl md:text-5xl text-primary leading-tight">Plantas destacadas del catálogo</h2>
+</div>
+<a class="font-manrope text-xs uppercase tracking-[0.25em] text-primary border-b border-primary pb-2" href="catalogo.html">Ver colección completa</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<a class="group block" href="monstera-arquitectura.html">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Monstera Arquitectura" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../img/catalogo/monstera.png"/>
+</div>
+<p class="font-noto-serif text-2xl mt-4 text-primary">Monstera Arquitectura</p>
+</a>
+<a class="group block" href="ficus-lyrata-estatua.html">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Ficus Lyrata Estatua" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../img/catalogo/FicusLyrata.png"/>
+</div>
+<p class="font-noto-serif text-2xl mt-4 text-primary">Ficus Lyrata Estatua</p>
+</a>
+<a class="group block" href="sansevieria-monolito.html">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Sansevieria Monolito" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../img/catalogo/Sansevieria.png"/>
+</div>
+<p class="font-noto-serif text-2xl mt-4 text-primary">Sansevieria Monolito</p>
+</a>
+<a class="group block" href="cactus-esfera.html">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low">
+<img alt="Cactus Esfera" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="../img/catalogo/Cactus.png"/>
+</div>
+<p class="font-noto-serif text-2xl mt-4 text-primary">Cactus Esfera</p>
+</a>
+</div>
+</section>
+<section class="px-12 pb-28 max-w-[1920px] mx-auto">
+<div class="bg-[#f0eee9] p-10 md:p-16 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-8">
+<span class="font-manrope text-xs uppercase tracking-[0.3em] text-secondary mb-4 block">Siguiente paso</span>
+<h2 class="font-noto-serif text-4xl md:text-6xl text-primary leading-tight mb-5">Descubra su colección ideal con acompañamiento experto</h2>
+<p class="font-manrope text-lg text-on-surface-variant max-w-3xl">Inicie por el catálogo o agende una asesoría para construir una propuesta vegetal alineada a su espacio y estilo de vida.</p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-4 lg:items-end">
+<a class="inline-flex justify-center px-10 py-4 bg-primary text-on-primary font-manrope font-bold text-xs uppercase tracking-[0.25em] hover:opacity-90 transition-opacity" href="catalogo.html">Ir a Catálogo</a>
+<a class="inline-flex justify-center px-10 py-4 border border-outline-variant text-primary font-manrope font-bold text-xs uppercase tracking-[0.25em] hover:bg-surface transition-colors" href="filosofia.html">Ver Filosofía</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full rounded-none border-t-0 bg-[#fbf9f4] dark:bg-[#18241a] mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 w-full">
+<div class="flex flex-col justify-between h-full">
+<span class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</span>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] mt-8">© 2026 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Explorar</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="index.html">Inicio</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">Pinterest</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Servicio</span>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="envios.html">Envíos</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="terminos.html">Términos</a>
+</div>
+</div>
+<div class="flex flex-col justify-end items-end text-right">
+<p class="font-noto-serif text-lg italic text-[#18241a] max-w-xs mb-4">"Donde la arquitectura encuentra sus pulmones."</p>
+<div class="w-full h-px bg-outline-variant opacity-30 my-4"></div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Atención Privada: concierge@intemporal.botany</p>
+</div>
+</div>
+</footer>
+<script src="../assets/js/base-motion.js"></script>
+<script src="../assets/js/home.js"></script>
 </body>
 </html>
