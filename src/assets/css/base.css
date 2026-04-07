@@ -1,0 +1,73 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #fbf9f4;
+  color: #18241a;
+}
+
+.font-noto-serif {
+  font-family: 'Noto Serif', serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+[data-live-progress] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: 70;
+  background: linear-gradient(90deg, #18241a, #3d4a3e);
+  box-shadow: 0 8px 18px rgba(24, 36, 26, 0.25);
+  transition: width 0.15s linear;
+}
+
+body.js-motion-ready .reveal-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+body.js-motion-ready .reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.live-tilt {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.live-tilt.is-hovered {
+  box-shadow: 0 20px 40px rgba(112, 90, 73, 0.12);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf9f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #18241a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.js-motion-ready .reveal-item,
+  body.js-motion-ready .reveal-item.is-visible,
+  .live-tilt {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
