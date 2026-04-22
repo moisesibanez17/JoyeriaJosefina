@@ -64,7 +64,7 @@ Una curaduría de metales nobles y gemas atemporales, seleccionadas por su purez
 // Motor de renderizado dinámico — lista joyas via GitHub API
 fetch('../data/index.json')
   .then(r => r.json())
-  .then(ids => Promise.all(ids.map(id => fetch('../data/joyas/' + id + '.json').then(r => r.json()))))
+  .then(ids => Promise.all(ids.map(id => fetch('../data/joyas/' + id + '.json').then(r => r.json()).then(item => ({ ...item, _id: id })))))
   .then(items => {
       const container = document.getElementById('dynamic-catalog');
       
@@ -107,7 +107,7 @@ fetch('../data/index.json')
                       <p class="font-body text-sm italic leading-relaxed">"${item.nota || ''}"</p>
                     </div>
                   </div>
-                  <a class="inline-flex w-full items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary-container transition-all" href="producto.html?id=${item.id}">Ver Detalles</a>
+                  <a class="inline-flex w-full items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary-container transition-all" href="producto.html?id=${item._id}">Ver Detalles</a>
                 </div>
               </div>`;
           });
