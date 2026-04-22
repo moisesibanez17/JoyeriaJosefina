@@ -1,0 +1,10 @@
+{
+  "id": "collar-oro",
+  "nombre": "Collar de oro",
+  "coleccion": "Colección Oro",
+  "precio": "2599",
+  "imagen": "../../img/catalogo/images.jpeg",
+  "corte": "Fino",
+  "material": "Oro",
+  "nota": "Ta chido"
+}
