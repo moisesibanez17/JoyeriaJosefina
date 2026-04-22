@@ -10,6 +10,8 @@ collections:
   - name: "catalogo_global"
     label: "Catálogo de Joyas"
     folder: "src/data/joyas"
+    format: json
+    extension: json
     create: true
     slug: "{{fields.id}}"
     identifier_field: "nombre"
