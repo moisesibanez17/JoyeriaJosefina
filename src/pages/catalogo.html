@@ -61,14 +61,15 @@ Una curaduría de metales nobles y gemas atemporales, seleccionadas por su purez
 </footer>
 
 <script>
-// Motor de renderizado dinámico — lee archivos individuales de joyas
-const joyaIds = [
-  'collar-oro','pulsera-ororosado','arracadas-oro',
-  'pulsera-tennis','anillo-plata','argolla-platino',
-  'anillo-zafiro','dije-esmeralda','aretes-perlas'
-];
-
-Promise.all(joyaIds.map(id => fetch('../data/joyas/' + id + '.json').then(r => r.json())))
+// Motor de renderizado dinámico — lista joyas via GitHub API
+fetch('https://api.github.com/repos/moisesibanez17/JoyeriaJosefina/contents/src/data/joyas')
+  .then(r => r.json())
+  .then(files => {
+    const urls = files
+      .filter(f => f.name.endsWith('.json'))
+      .map(f => fetch(f.download_url).then(r => r.json()));
+    return Promise.all(urls);
+  })
   .then(items => {
       const container = document.getElementById('dynamic-catalog');
       
