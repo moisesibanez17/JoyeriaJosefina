@@ -1,15 +1,15 @@
 {
   "items": [
     {
-      "id": "collar-oro",
-      "nombre": "Collar Eslabón de Oro",
       "coleccion": "Colección Oro",
       "estado": "Pieza Destacada",
       "precio": "MXN $45,800",
+      "material": "Oro amarillo de 18K",
+      "nombre": "Collar Eslabón de Oro",
+      "nota": "Una declaración de estilo rotunda. Combos con escotes en V o prendas oscuras para resaltar la simetría de sus eslabones",
       "imagen": "../img/catalogo/oro_collar.png",
       "corte": "Minimalismo Cálido / Evening Wear",
-      "material": "Oro amarillo de 18K",
-      "nota": "Una declaración de estilo rotunda. Combos con escotes en V o prendas oscuras para resaltar la simetría de sus eslabones."
+      "id": "collar-oro"
     },
     {
       "id": "pulsera-ororosado",
