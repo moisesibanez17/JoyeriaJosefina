@@ -21,7 +21,7 @@ collections:
     summary: '{{nombre}} - {{precio}} - {{coleccion}}'
     fields:
       - {label: "Nombre de la Joya", name: "nombre", widget: "string"}
-      - {label: "Coleccion", name: "coleccion", widget: "select", options: ["Coleccion Oro", "Plata y Platino", "Gemas Clasicas", "Argollas de Matrimonio"]}
+      - {label: "Coleccion", name: "coleccion", widget: "select", options: ["Colección Oro", "Plata y Platino", "Gemas Clásicas", "Argollas de Matrimonio"]}
       - {label: "Etiqueta Destacada (ej. Pieza Unica)", name: "estado", widget: "string", required: false}
       - {label: "Precio al publico (solo numero, ej. 45800)", name: "precio", widget: "number"}
       - {label: "Fotografia", name: "imagen", widget: "image"}
