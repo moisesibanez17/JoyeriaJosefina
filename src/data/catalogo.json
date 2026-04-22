@@ -90,6 +90,17 @@
       "corte": "Perla Gota Asimétrica",
       "material": "Aguas del Sur, Base oro",
       "nota": "Perlas cultivadas en los mares del sur, luciendo un lustre nacarado perfecto para todo evento formal."
+    },
+    {
+      "coleccion": "Colección Oro",
+      "estado": "N/A",
+      "precio": "2500",
+      "material": "Oro",
+      "nombre": "Collar de Oro",
+      "nota": "Esta chido",
+      "imagen": "../img/catalogo/images.jpeg",
+      "corte": "Fino",
+      "id": "collar-oro"
     }
   ]
 }
