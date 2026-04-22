@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intemporal</title>
-  <meta http-equiv="refresh" content="0; url=src/pages/index.html" />
   <link rel="canonical" href="src/pages/index.html" />
+  <script>
+    // Se usa Javascript para redirigir preservando el #invite_token de Netlify Identity
+    window.location.replace("src/pages/index.html" + window.location.search + window.location.hash);
+  </script>
 </head>
 <body>
   <p>Redirigiendo a <a href="src/pages/index.html">Inicio</a>...</p>
