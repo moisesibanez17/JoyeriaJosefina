@@ -5,27 +5,26 @@ backend:
   base_url: https://decap-oauth-mu.vercel.app
   auth_endpoint: api/auth
 
-media_folder: "src/img/catalogo" # Carpeta donde el CMS guarda las fotos nuevas
-public_folder: "/JoyeriaJosefina/src/img/catalogo" # Ruta que la web lee para mostrar la foto
-logo_url: "../img/logo.jpg" # Logo de la marca
+media_folder: "src/img/catalogo"
+public_folder: "/JoyeriaJosefina/src/img/catalogo"
+logo_url: "../img/logo.jpg"
 
 collections:
   - name: "catalogo_global"
-    label: "Catálogo de Joyas"
+    label: "Catalogo de Joyas"
     folder: "src/data/joyas"
     format: json
     extension: json
     create: true
-    slug: "{{fields.id}}"
+    slug: "{{nombre}}-{{year}}{{month}}{{day}}{{hour}}{{minute}}{{second}}"
     identifier_field: "nombre"
-    summary: '{{nombre}} — {{precio}} — {{coleccion}}'
+    summary: '{{nombre}} - {{precio}} - {{coleccion}}'
     fields:
-      - {label: "ID de la Página (ej. anillo-solitario)", name: "id", widget: "string"}
       - {label: "Nombre de la Joya", name: "nombre", widget: "string"}
-      - {label: "Colección", name: "coleccion", widget: "select", options: ["Colección Oro", "Plata y Platino", "Gemas Clásicas", "Argollas de Matrimonio"]}
-      - {label: "Etiqueta Destacada (ej. Pieza Única, N/A para vacío)", name: "estado", widget: "string", required: false}
-      - {label: "Precio al público", name: "precio", widget: "string"}
-      - {label: "Fotografía", name: "imagen", widget: "image"}
+      - {label: "Coleccion", name: "coleccion", widget: "select", options: ["Coleccion Oro", "Plata y Platino", "Gemas Clasicas", "Argollas de Matrimonio"]}
+      - {label: "Etiqueta Destacada (ej. Pieza Unica)", name: "estado", widget: "string", required: false}
+      - {label: "Precio al publico (solo numero, ej. 45800)", name: "precio", widget: "number"}
+      - {label: "Fotografia", name: "imagen", widget: "image"}
       - {label: "Corte / Estilo", name: "corte", widget: "string"}
       - {label: "Material / Quilates", name: "material", widget: "string"}
-      - {label: "Consejo Gemológico Breve", name: "nota", widget: "text"}
+      - {label: "Consejo Gemologico Breve", name: "nota", widget: "text"}
