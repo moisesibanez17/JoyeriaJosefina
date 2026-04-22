@@ -38,10 +38,12 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get('id');
 
-fetch('../data/catalogo.json')
-  .then(res => res.json())
-  .then(data => {
-      const item = (data.items || []).find(i => i.id === id);
+fetch('../data/joyas/' + id + '.json')
+  .then(res => {
+      if (!res.ok) throw new Error('not found');
+      return res.json();
+  })
+  .then(item => {
       const container = document.getElementById('product-container');
       
       if (!item) {

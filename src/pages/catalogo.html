@@ -61,11 +61,15 @@ Una curaduría de metales nobles y gemas atemporales, seleccionadas por su purez
 </footer>
 
 <script>
-// Motor de renderizado dinámico (Lee desde Github Pages o JSON local)
-fetch('../data/catalogo.json')
-  .then(res => res.json())
-  .then(data => {
-      const items = data.items || [];
+// Motor de renderizado dinámico — lee archivos individuales de joyas
+const joyaIds = [
+  'collar-oro','pulsera-ororosado','arracadas-oro',
+  'pulsera-tennis','anillo-plata','argolla-platino',
+  'anillo-zafiro','dije-esmeralda','aretes-perlas'
+];
+
+Promise.all(joyaIds.map(id => fetch('../data/joyas/' + id + '.json').then(r => r.json())))
+  .then(items => {
       const container = document.getElementById('dynamic-catalog');
       
       // Agrupar por colecciones
@@ -116,6 +120,6 @@ fetch('../data/catalogo.json')
       }
       html += '</section>';
       container.innerHTML = html;
-  }).catch(err => console.error('Error cargando catalogo:', err));
+  }).catch(err => console.error('Error cargando joyas:', err));
 </script>
 </body></html>
