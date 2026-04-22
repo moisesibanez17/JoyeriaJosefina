@@ -3,7 +3,7 @@
   "nombre": "Argolla de Platino Clásica",
   "coleccion": "Plata y Platino",
   "precio": "MXN $21,980",
-  "imagen": "../../img/catalogo/platino_argolla.png",
+  "imagen": "/JoyeriaJosefina/src/img/catalogo/platino_argolla.png",
   "corte": "Corte de banda limpio",
   "material": "Platino Sólido",
   "nota": "Platino pulido a espejo. Su durabilidad extrema simboliza los lazos más fuertes y puros."
