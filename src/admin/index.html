@@ -6,6 +6,32 @@
   <title>Admin - Intemporal</title>
   <!-- Incluir el script de identidad de Netlify para permitir autenticación sin backend -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    /* Personalización UI de Decap CMS */
+    [class*="AppHeader"] {
+      background-color: #18241a !important; /* Verde oscuro Josefina */
+    }
+    button[class*="Button-button-default-primary"], 
+    a[class*="Button-button-default-primary"],
+    [class*="Card"] [class*="Button-button-default-primary"] {
+      background-color: #705a49 !important; /* Tono cálido / dorado */
+      color: #fbf9f4 !important;
+    }
+    div[class*="SidebarContainer"] {
+      background-color: #fbf9f4 !important; /* Crema */
+    }
+    [class*="StyledSidebarHeading"] {
+      color: #18241a !important;
+    }
+    a[class*="SidebarNavLink"] {
+      color: #705a49 !important;
+    }
+    a[class*="SidebarNavLinkActive"] {
+      background-color: #18241a !important;
+      color: white !important;
+      border-left-color: #705a49 !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Carga oficial de Decap CMS -->
