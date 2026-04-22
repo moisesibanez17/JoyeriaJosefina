@@ -2,7 +2,7 @@ backend:
   name: github
   repo: moisesibanez17/JoyeriaJosefina
   branch: main
-  base_url: https://decap-oauth-3al1qdkax-moisesibanez7835-4212s-projects.vercel.app
+  base_url: https://decap-oauth-mu.vercel.app
   auth_endpoint: api/auth
 
 media_folder: "src/img/catalogo" # Carpeta donde el CMS guarda las fotos nuevas
