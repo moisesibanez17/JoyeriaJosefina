@@ -62,7 +62,7 @@ Una curaduría de metales nobles y gemas atemporales, seleccionadas por su purez
 
 <script>
 // Motor de renderizado dinámico — lista joyas via GitHub API
-fetch('https://api.github.com/repos/moisesibanez17/JoyeriaJosefina/contents/src/data/joyas?ref=main&t=' + Date.now())
+fetch('https://api.github.com/repos/moisesibanez17/JoyeriaJosefina/contents/src/data/joyas?ref=main')
   .then(r => { if (!r.ok) throw new Error('API ' + r.status); return r.json(); })
   .then(files => {
     if (!Array.isArray(files)) throw new Error('Rate limit o respuesta inesperada');
