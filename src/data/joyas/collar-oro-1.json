@@ -1,0 +1,10 @@
+{
+  "id": "collar-oro",
+  "nombre": "Collar de Oro",
+  "coleccion": "Colección Oro",
+  "precio": "3999",
+  "imagen": "../../img/catalogo/images.jpeg",
+  "corte": "Largo",
+  "material": "Oro",
+  "nota": "Muy buen gusto"
+}
