@@ -9,7 +9,7 @@
   <style>
     /* Personalización UI de Decap CMS */
     [class*="AppHeader"] {
-      background-color: #18241a !important; /* Verde oscuro Josefina */
+      background-color: #13383a !important; /* Verde oscuro Josefina */
     }
     button[class*="Button-button-default-primary"], 
     a[class*="Button-button-default-primary"],
@@ -21,13 +21,13 @@
       background-color: #fbf9f4 !important; /* Crema */
     }
     [class*="StyledSidebarHeading"] {
-      color: #18241a !important;
+      color: #13383a !important;
     }
     a[class*="SidebarNavLink"] {
       color: #705a49 !important;
     }
     a[class*="SidebarNavLinkActive"] {
-      background-color: #18241a !important;
+      background-color: #13383a !important;
       color: white !important;
       border-left-color: #705a49 !important;
     }
@@ -51,19 +51,19 @@
         var items = data.items || [];
 
         return h('div', { style: { padding: '2rem', fontFamily: 'system-ui, -apple-system, sans-serif' } },
-          h('h2', { style: { fontSize: '24px', marginBottom: '20px', color: '#18241a' } }, "💍 Vista Previa del Catálogo en Vivo"),
+          h('h2', { style: { fontSize: '24px', marginBottom: '20px', color: '#13383a' } }, "💍 Vista Previa del Catálogo en Vivo"),
           h('div', { style: { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' } },
             items.map(function(item, index) {
               var imgSrc = item.imagen ? getAsset(item.imagen).toString() : '';
               return h('div', { key: index, style: { border: '1px solid #e5e7eb', padding: '16px', backgroundColor: '#fbf9f4', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' } },
                 imgSrc ? h('img', { src: imgSrc, style: { width: '100%', height: '280px', objectFit: 'cover', borderRadius: '4px', marginBottom: '16px' } }) : null,
                 h('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' } },
-                  h('h3', { style: { margin: '0', fontSize: '18px', color: '#18241a', lineHeight: '1.2' } }, item.nombre || 'Joya Sin Nombre'),
+                  h('h3', { style: { margin: '0', fontSize: '18px', color: '#13383a', lineHeight: '1.2' } }, item.nombre || 'Joya Sin Nombre'),
                   h('span', { style: { fontSize: '14px', fontWeight: 'bold', color: '#705a49', whiteSpace: 'nowrap', marginLeft: '10px' } }, item.precio || '$0')
                 ),
                 h('p', { style: { margin: '0 0 12px', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', color: '#6b7280' } }, item.coleccion || 'Sin colección'),
                 h('div', { style: { backgroundColor: '#f0eee9', padding: '12px', borderRadius: '4px' } },
-                    h('p', { style: { margin: '0 0 4px', fontSize: '11px', textTransform: 'uppercase', fontWeight: 'bold', color: '#18241a' } }, "Corte: " + (item.corte || 'N/A')),
+                    h('p', { style: { margin: '0 0 4px', fontSize: '11px', textTransform: 'uppercase', fontWeight: 'bold', color: '#13383a' } }, "Corte: " + (item.corte || 'N/A')),
                     h('p', { style: { margin: '0', fontSize: '13px', fontStyle: 'italic', color: '#4b5563', lineHeight: '1.4' } }, item.nota ? `"${item.nota}"` : '')
                 )
               );

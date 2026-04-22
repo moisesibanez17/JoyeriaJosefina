@@ -23,7 +23,7 @@
 
     const price = document.querySelector('.lg\\:col-span-5 header p');
     if (price) {
-      price.style.background = 'linear-gradient(90deg, #18241a 0%, #95a495 50%, #18241a 100%)';
+      price.style.background = 'linear-gradient(90deg, #13383a 0%, #95a495 50%, #13383a 100%)';
       price.style.backgroundSize = '220% 100%';
       price.style.webkitBackgroundClip = 'text';
       price.style.backgroundClip = 'text';

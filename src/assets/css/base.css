@@ -6,7 +6,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #fbf9f4;
-  color: #18241a;
+  color: #13383a;
 }
 
 header.fixed {
@@ -47,7 +47,7 @@ header.fixed .md\:hidden a[href='index.html'] {
   height: 3px;
   width: 0%;
   z-index: 70;
-  background: linear-gradient(90deg, #18241a, #3d4a3e);
+  background: linear-gradient(90deg, #13383a, #3d4a3e);
   box-shadow: 0 8px 18px rgba(24, 36, 26, 0.25);
   transition: width 0.15s linear;
 }
@@ -82,7 +82,7 @@ body.js-motion-ready .reveal-item.is-visible {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #18241a;
+  background: #13383a;
 }
 
 @media (prefers-reduced-motion: reduce) {

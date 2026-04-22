@@ -23,7 +23,7 @@ tailwind.config = {
         'on-secondary-fixed': '#28180b',
         'background': '#fbf9f4',
         'on-primary-container': '#95a495',
-        'primary': '#18241a',
+        'primary': '#13383a',
         'inverse-surface': '#30312e',
         'surface-variant': '#e4e2dd',
         'on-tertiary-container': '#b79b7b',
