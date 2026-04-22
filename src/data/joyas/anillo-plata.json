@@ -1,8 +1,7 @@
 {
-  "id": "anillo-plata",
   "nombre": "Anillo Diamante Solitario",
   "coleccion": "Plata y Platino",
-  "precio": "MXN $35,740",
+  "precio": 35740,
   "imagen": "/JoyeriaJosefina/src/img/catalogo/plata_anillo.png",
   "corte": "Solitario de Corte Redondo Brillant",
   "material": "Montadura de plata .925 y rodio",

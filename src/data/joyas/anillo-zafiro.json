@@ -1,8 +1,7 @@
 {
-  "id": "anillo-zafiro",
   "nombre": "Anillo Zafiro Azul Real",
   "coleccion": "Gemas Clásicas",
-  "precio": "MXN $92,890",
+  "precio": 92890,
   "imagen": "/JoyeriaJosefina/src/img/catalogo/zafiro_anillo.png",
   "corte": "Zafiro Azul Corte Ovalado 2.5ct",
   "material": "Platino con microdiamantes",

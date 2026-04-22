@@ -1,9 +1,8 @@
 {
-  "id": "collar-oro",
   "nombre": "Collar Eslabón de Oro",
   "coleccion": "Colección Oro",
   "estado": "Pieza Destacada",
-  "precio": "MXN $45,800",
+  "precio": 45800,
   "imagen": "/JoyeriaJosefina/src/img/catalogo/oro_collar.png",
   "corte": "Minimalismo Cálido / Evening Wear",
   "material": "Oro amarillo de 18K",

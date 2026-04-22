@@ -1,8 +1,7 @@
 {
-  "id": "Coll",
   "nombre": "Collar de oro",
   "coleccion": "Colección Oro",
-  "precio": "299",
+  "precio": 299,
   "imagen": "/JoyeriaJosefina/src/img/catalogo/images.jpeg",
   "corte": "Muy largo",
   "material": "Oro",

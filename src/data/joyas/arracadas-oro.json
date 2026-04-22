@@ -1,8 +1,7 @@
 {
-  "id": "arracadas-oro",
   "nombre": "Arracadas de Oro Clásicas",
   "coleccion": "Colección Oro",
-  "precio": "MXN $18,500",
+  "precio": 18500,
   "imagen": "/JoyeriaJosefina/src/img/catalogo/oro_arracadas.png",
   "corte": "Atemporal Diario",
   "material": "Oro Macizo 14K",
