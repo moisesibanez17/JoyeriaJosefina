@@ -6,7 +6,7 @@ backend:
   auth_endpoint: api/auth
 
 media_folder: "src/img/catalogo" # Carpeta donde el CMS guarda las fotos nuevas
-public_folder: "../../img/catalogo" # Ruta que la web lee para mostrar la foto
+public_folder: "/JoyeriaJosefina/src/img/catalogo" # Ruta que la web lee para mostrar la foto
 logo_url: "../img/logo.jpg" # Logo de la marca
 
 collections:
