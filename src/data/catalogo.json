@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "id": "collar-oro",
+      "nombre": "Collar Eslabón de Oro",
+      "coleccion": "Colección Oro",
+      "estado": "Pieza Destacada",
+      "precio": "MXN $45,800",
+      "imagen": "../img/catalogo/oro_collar.png",
+      "corte": "Minimalismo Cálido / Evening Wear",
+      "material": "Oro amarillo de 18K",
+      "nota": "Una declaración de estilo rotunda. Combos con escotes en V o prendas oscuras para resaltar la simetría de sus eslabones."
+    },
+    {
+      "id": "pulsera-ororosado",
+      "nombre": "Pulsera de Oro Rosado",
+      "coleccion": "Colección Oro",
+      "precio": "MXN $32,290",
+      "imagen": "../img/catalogo/ororosado_pulsera.png",
+      "corte": "Contemporáneo Romántico",
+      "material": "Oro Rosado 18K y pavé de diamantes",
+      "nota": "Recomendamos limpieza ultrasónica profesional anualmente para preservar el brillo sutil de sus detalles."
+    },
+    {
+      "id": "arracadas-oro",
+      "nombre": "Arracadas de Oro Clásicas",
+      "coleccion": "Colección Oro",
+      "precio": "MXN $18,500",
+      "imagen": "../img/catalogo/oro_arracadas.png",
+      "corte": "Atemporal Diario",
+      "material": "Oro Macizo 14K",
+      "nota": "Imprescindibles en cualquier colección. Su cierre oculto garantiza seguridad y líneas impecables."
+    },
+    {
+      "id": "pulsera-tennis",
+      "nombre": "Pulsera de Diamantes 'Tennis'",
+      "coleccion": "Plata y Platino",
+      "precio": "MXN $185,650",
+      "imagen": "../img/catalogo/diamante_pulsera.png",
+      "corte": "Clásico / Formal",
+      "material": "Platino 950, 4.5 Quilates T.W.",
+      "nota": "Una articulación perfecta que fluye como seda sobre tu muñeca; el estándar del lujo discreto."
+    },
+    {
+      "id": "anillo-plata",
+      "nombre": "Anillo Diamante Solitario",
+      "coleccion": "Plata y Platino",
+      "precio": "MXN $35,740",
+      "imagen": "../img/catalogo/plata_anillo.png",
+      "corte": "Solitario de Corte Redondo Brillant",
+      "material": "Montadura de plata .925 y rodio",
+      "nota": "Ideal para sellar promesas, ofreciendo un destello deslumbrante que capta miradas al instante."
+    },
+    {
+      "id": "argolla-platino",
+      "nombre": "Argolla de Platino Clásica",
+      "coleccion": "Plata y Platino",
+      "precio": "MXN $21,980",
+      "imagen": "../img/catalogo/platino_argolla.png",
+      "corte": "Corte de banda limpio",
+      "material": "Platino Sólido",
+      "nota": "Platino pulido a espejo. Su durabilidad extrema simboliza los lazos más fuertes y puros."
+    },
+    {
+      "id": "anillo-zafiro",
+      "nombre": "Anillo Zafiro Azul Real",
+      "coleccion": "Gemas Clásicas",
+      "precio": "MXN $92,890",
+      "imagen": "../img/catalogo/zafiro_anillo.png",
+      "corte": "Zafiro Azul Corte Ovalado 2.5ct",
+      "material": "Platino con microdiamantes",
+      "nota": "Rodeado de una corona de microdiamantes y engaste francés que potencian el tono azul cobalto profundo."
+    },
+    {
+      "id": "dije-esmeralda",
+      "nombre": "Dije de Esmeralda Pura",
+      "coleccion": "Gemas Clásicas",
+      "precio": "MXN $64,320",
+      "imagen": "../img/catalogo/esmeralda_dije.png",
+      "corte": "Corte Rectangular Esmeralda",
+      "material": "Oro amarillo 18k",
+      "nota": "Un verde hipnótico de Colombia de origen certificado. Un destello de color inolvidable."
+    },
+    {
+      "id": "aretes-perlas",
+      "nombre": "Aretes Gota de Perla",
+      "coleccion": "Gemas Clásicas",
+      "precio": "MXN $28,900",
+      "imagen": "../img/catalogo/perla_aretes.png",
+      "corte": "Perla Gota Asimétrica",
+      "material": "Aguas del Sur, Base oro",
+      "nota": "Perlas cultivadas en los mares del sur, luciendo un lustre nacarado perfecto para todo evento formal."
+    }
+  ]
+}

@@ -1,303 +1,121 @@
 <!DOCTYPE html>
-
 <html class="light" lang="es"><head>
 <meta charset="utf-8"/>
 <link rel="icon" type="image/x-icon" href="../img/icon.jpg"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intemporal | Catálogo Dinámico</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="../assets/js/tailwind-config.js"></script>
 <link href="../assets/css/base.css" rel="stylesheet"/>
 <link href="../assets/css/catalogo.css" rel="stylesheet"/>
 </head>
 <body class="bg-surface text-on-surface antialiased">
-<!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 rounded-none bg-[#fbf9f4]/70 backdrop-blur-xl dark:bg-[#18241a]/80 shadow-none">
 <nav class="flex flex-col md:flex-row justify-between md:items-center w-full px-4 sm:px-6 md:px-12 py-4 md:py-6 max-w-[1920px] mx-auto gap-3 md:gap-0">
 <div class="flex items-center justify-between w-full md:w-auto gap-8">
-<a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">
-                INTEMPORAL
-            </a>
+<a class="font-noto-serif text-2xl tracking-[0.2em] uppercase text-[#18241a] dark:text-[#fbf9f4]" href="index.html">INTEMPORAL</a>
 <div class="hidden md:flex items-center gap-8 font-manrope text-lg tracking-tight">
 <a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="index.html">Inicio</a>
 <a class="text-[#18241a] dark:text-[#fbf9f4] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
-<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="asesoria.html">Asesoría</a>
+<a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="asesoria.html">Asesoría Privada</a>
 <a class="text-[#705a49] dark:text-[#705a49] opacity-70 hover:opacity-100 hover:text-[#18241a] transition-all duration-300" href="filosofia.html">Nuestra Filosofía</a>
 </div>
 </div>
-<div class="md:hidden flex w-full flex-wrap gap-3 font-manrope text-[10px] uppercase tracking-[0.15em]">
-<a class="text-[#705a49]" href="index.html">Inicio</a>
-<a class="text-[#18241a] border-b border-[#18241a] pb-1" href="catalogo.html">Catálogo</a>
-<a class="text-[#705a49]" href="asesoria.html">Asesoría</a>
-<a class="text-[#705a49]" href="filosofia.html">Filosofía</a>
-</div>
- </nav>
+</nav>
 </header>
 <main class="pt-28 md:pt-32 pb-16 md:pb-20">
-<!-- Hero / Section Intro -->
 <section class="px-4 sm:px-6 md:px-12 mb-14 md:mb-24 max-w-[1920px] mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
 <div class="md:col-span-7">
-<span class="font-label text-[10px] uppercase tracking-[0.3em] text-secondary mb-4 block">Conservatorio Digital</span>
-<h1 class="text-4xl sm:text-5xl md:text-8xl leading-[1.1] text-primary">Catálogo <br/><span class="italic">Botánico</span></h1>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-secondary mb-4 block">Alta Joyería Clásica</span>
+<h1 class="text-4xl sm:text-5xl md:text-8xl leading-[1.1] text-primary">Catálogo <br/><span class="italic">Selecto</span></h1>
 </div>
 <div class="md:col-span-5 pb-4">
 <p class="font-body text-base md:text-lg text-on-surface-variant max-w-md leading-relaxed">
-                        Una curaduría de especímenes vivos seleccionados por su integridad arquitectónica y su capacidad para transformar el espacio habitado en una galería de vida.
-                    </p>
+Una curaduría de metales nobles y gemas atemporales, seleccionadas por su pureza y capacidad de trascender generaciones.
+</p>
 </div>
 </div>
 </section>
-<!-- Collection Filters -->
-<section class="px-4 sm:px-6 md:px-12 mb-12 md:mb-16 max-w-[1920px] mx-auto">
-<div class="flex flex-wrap gap-4 border-b border-outline-variant/20 pb-8">
-<button class="w-full sm:w-auto px-6 py-3 bg-primary text-on-primary font-label text-[11px] uppercase tracking-widest">Todas las Especies</button>
-<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Tierra</button>
-<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Orgánica</button>
-<button class="w-full sm:w-auto px-6 py-3 bg-surface-container-high text-on-surface font-label text-[11px] uppercase tracking-widest hover:bg-surface-container-highest transition-colors">Colección Estructural</button>
-</div>
-</section>
-<!-- Grid de Catálogo -->
-<section class="px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
-<!-- Colección Tierra -->
-<div class="mb-32">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12">
-<h2 class="text-3xl md:text-4xl">Colección Tierra</h2>
-<span class="font-body italic text-secondary text-lg">— Calidez mineral y texturas de barro.</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-14 md:gap-y-24">
-<!-- Product Card 1 -->
-<div>
-<div class="aspect-[4/5] bg-surface-container-low mb-8 relative">
-<img class="w-full h-full object-cover" data-alt="Stately Fiddle Leaf Fig in a large terracotta pot standing against a warm beige textured wall with cinematic morning shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLMWXY_VkNKSCC9pja7imqWLyHpx_jazhCjf3jGLffD8G-IC2cfQdqzlUZvuBhaqrXauyPmxQf9v2OUHKJf4Q7Xhoy-2VdNu3QjMgBctWrwj4AbhOUbrD-Yw0VqUoyB8cjlvnelX3Dk76AjXJjBkgEhEb7w1EWVQ_3DElY4gWFP6nc1uks9orJy3aT4-wKBZct7WwPiHUUA1jxRapL-37sCBz6cyAfFcKb_z_mYSwJmFQjO15z_akYfdy_ZLmlJZzrSEvNACEXEWY"/>
-<div class="absolute top-4 right-4 bg-surface/70 backdrop-blur-md px-3 py-1 font-label text-[10px] uppercase tracking-widest">Especie Destacada</div>
-</div>
-<div class="px-2">
-<h3 class="text-2xl mb-3">Ficus Lyrata 'Estatua'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-4">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Colección Tierra</span>
-<span class="font-label text-lg font-bold text-primary">MXN $3,480</span>
-</div>
-<div class="space-y-4 mb-8">
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Interiorismo Sugerido</span>
-<p class="font-body text-sm">Minimalismo Cálido</p>
-</div>
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Dificultad</span>
-<p class="font-body text-sm">Media — Requiere atención experta</p>
-</div>
-<div class="bg-surface-container p-6">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Consejo del Asesor</span>
-<p class="font-body text-sm italic leading-relaxed">"Ubicar cerca de luz tamizada por lino para resaltar su silueta escultórica y evitar quemaduras en sus hojas."</p>
-</div>
-</div>
-<a class="inline-flex w-full items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary-container transition-all" href="ficus-lyrata-estatua.html">
-                                Ver Detalles
-                            </a>
-</div>
-</div>
-<!-- Product Card 2 (Asymmetric Offset) -->
-<div>
-<div class="aspect-[4/5] bg-surface-container-low mb-8">
-<img class="w-full h-full object-cover" data-alt="Large Rubber Plant Ficus Elastica with deep burgundy leaves in a dark clay pot on an oak floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXqmbIeaF_euHcgV_B25NPwXPMpujy4_PW3fCr-Yz958PPpL-6mCUlBUgi-GbhIbnjIsit21ieFQqshAeWIPVY0W8CrmIvJ7aV7OtXnqvdn5RtzWnh1HN0nZaxYyMK7Ai0i3JqlKP3f6Ll2yrCJitjLag4hxkjCW6lzigEjpgwbrHOEr4x2nCYn2ZyssZ_g9OofA-ZlnHz2Dd69ZBPyIw3zpNBr7pwN3OElRpFmTfyocNQipqZVAnfoHkRMozOO15xF-w62AZ3C4M"/>
-</div>
-<div class="px-2">
-<h3 class="text-2xl mb-3">Ficus Elastica 'Tinto'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-4">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Colección Tierra</span>
-<span class="font-label text-lg font-bold text-primary">MXN $2,290</span>
-</div>
-<div class="space-y-4 mb-8">
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Interiorismo Sugerido</span>
-<p class="font-body text-sm">Contemporáneo Orgánico</p>
-</div>
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Dificultad</span>
-<p class="font-body text-sm">Baja — Resiliencia natural</p>
-</div>
-<div class="bg-surface-container p-6">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Consejo del Asesor</span>
-<p class="font-body text-sm italic leading-relaxed">"Limpiar sus hojas con un paño húmedo para mantener el brillo profundo que absorbe la luz ambiental."</p>
-</div>
-</div>
-<a class="inline-flex w-full items-center justify-center py-4 border border-primary text-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-all" href="ficus-elastica-tinto.html">
-                                Ver Detalles
-                            </a>
-</div>
-</div>
-<!-- Collection Editorial Block -->
-<div class="bg-primary text-on-primary p-12 flex flex-col justify-center lg:-mt-12">
-<span class="material-symbols-outlined text-4xl mb-8">filter_hdr</span>
-<h4 class="text-4xl mb-6 leading-tight">La esencia de lo <span class="italic text-on-primary-container">terrenal</span>.</h4>
-<p class="font-body text-on-primary-container leading-relaxed mb-8">
-                            Piezas que evocan el origen. La Colección Tierra busca el equilibrio entre la verticalidad botánica y la solidez de los materiales naturales.
-                        </p>
-<a class="font-label text-[10px] uppercase tracking-[0.3em] border-b border-on-primary-container pb-2 self-start hover:text-white transition-colors" href="filosofia.html">Explorar Narrativa</a>
-</div>
-</div>
-</div>
-<!-- Colección Orgánica (Lush Greens) -->
-<div class="mb-32">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12 justify-end text-right">
-<span class="font-body italic text-secondary text-lg">Vitalidad exuberante y profundidad —</span>
-<h2 class="text-3xl md:text-4xl">Colección Orgánica</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Product Card 3 -->
-<div class="col-span-1 lg:col-span-2">
-<div class="aspect-[16/9] bg-surface-container-low mb-8">
-<img class="w-full h-full object-cover" data-alt="Lush Monstera Deliciosa with large fenestrated leaves in a bright sunlit studio apartment corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaXytcAnHMILZF1-Y0Il4mLIQLZah0b1tcgJtJoG_Hk2ZiTCPrjf377mYYxp1-bSfegLies4ONZ7FqDRqUkUOYTbdIxwT9JSUQuNIxuO4dYOWc9QhGeCpthlhD77CAhFzUJ5tsa0iNkrrNGbRPcBWWFnu00O-RxX_ONcjWFTsPwdcp4mHd2bJvIGW-PLHzTPqI5rigBeAfrjhT895iSfEr17G3BOGYAGOO_WG3U6gJkPBz38xdseJ6T-inWyOYHnE5dWqYM6BfHqo"/>
-</div>
-<div class="px-2">
-<div>
-<h3 class="text-2xl mb-3">Monstera 'Arquitectura'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-4">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Colección Orgánica</span>
-<span class="font-label text-lg font-bold text-primary">MXN $2,650</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-<div class="bg-surface-container-low p-6">
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2">Interiorismo</span>
-<p class="font-body text-sm">Biofilia Urbana</p>
-</div>
-<div class="bg-surface-container-low p-6">
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2">Consejo</span>
-<p class="font-body text-sm italic italic">"Permitir que sus raíces aéreas busquen el suelo para una mayor estabilidad visual."</p>
-</div>
-</div>
-<a class="inline-flex w-full items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em]" href="monstera-arquitectura.html">Ver Detalles</a>
-</div>
-</div>
-<!-- Product Card 4 -->
-<div>
-<div class="aspect-[4/5] bg-surface-container-low mb-8">
-<img class="w-full h-full object-cover" data-alt="Elegant fern plant with delicate fronds in a dark minimalist pot against a soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIncLJEpGCokjE4YsZkExH9d8nf-eY-vx0ggWIadVuJQJe0YPqxHHxbGbgjDIKj0xCNVtunGBMLmxMb1_LcHYcOHKF57TppJJEaE2tKslieOwZMqAndKs91Zk5nueLdEf3vzxJDV2wxl0Mudd09rDBhq8dYMC5cPcCgc9sbRX85P5ih0DeQFoS3-WXYlIyEuxupF-gRKh_UP7S4B15pWMPC2IHFrKDsXFphnD8ezjqsOz0mavs21V-HUTdSKXL1oN_lZxl5nmfch4"/>
-</div>
-<h3 class="text-xl mb-3">Helecho 'Neblina'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-4">
-<span class="font-body text-xs text-secondary uppercase tracking-widest">Colección Orgánica</span>
-<span class="font-label text-base font-bold text-primary">MXN $1,740</span>
-</div>
-<p class="font-body text-sm mb-6 line-clamp-2">Ideal para espacios con alta humedad y luz indirecta suave.</p>
-<a class="inline-flex w-full items-center justify-center py-3 border border-outline-variant text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container transition-colors" href="helecho-neblina.html">Ver Detalles</a>
-</div>
-<!-- Product Card 5 -->
-<div>
-<div class="aspect-[4/5] bg-surface-container-low mb-8">
-<img class="w-full h-full object-cover" data-alt="Philodendron with trailing vines on a minimalist white shelf in a bright room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP_Py2gTivcIa7t62ofiAXffpKGq4QMYmp4fjzTs1vlCZXaL5PJC8iv3HUA7kQZEMroVzUAVL7hNIyhDKNyb0x67SjSQ3eo5LQuRN0yGrMb0xoYCql1dLq8O3BAFiepG9i5BzFeB6uuQJkil60xZJlKQ7B6zz6Zymgq2DCw7PcxQ6UTmMQjUIlz9gHubGH5kz2oANnQeeyZGRYDQEt3aPgof6et36k02QUvWE1B4qhhHawIjDR6Yoe1pAVxEFu6laW8P7cXWSMMPU"/>
-</div>
-<h3 class="text-xl mb-3">Philodendron 'Cascada'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-4">
-<span class="font-body text-xs text-secondary uppercase tracking-widest">Colección Orgánica</span>
-<span class="font-label text-base font-bold text-primary">MXN $1,980</span>
-</div>
-<p class="font-body text-sm mb-6 line-clamp-2">Crecimiento dinámico que aporta movimiento a estanterías altas.</p>
-<a class="inline-flex w-full items-center justify-center py-3 border border-outline-variant text-primary font-label text-[10px] uppercase tracking-widest hover:bg-surface-container transition-colors" href="philodendron-cascada.html">Ver Detalles</a>
-</div>
-</div>
-</div>
-<!-- Colección Estructural (Mineral/Stone) -->
-<div class="mb-32">
-<div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12">
-<h2 class="text-3xl md:text-4xl">Colección Estructural</h2>
-<span class="font-body italic text-secondary text-lg">— Siluetas rígidas y texturas minerales.</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Product Card 6 -->
-<div class="md:col-span-2 flex flex-col md:flex-row bg-surface-container-high">
-<div class="w-full md:w-1/2 aspect-square md:aspect-auto">
-<img class="w-full h-full object-cover" data-alt="Tall Snake Plant Sansevieria in a raw concrete planter on a grey stone floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwbsmn2Svth7iUxq2eazI1vSsquWedWRa0DcM8S6P1NkvTFKQP3HNHL7GMeV6axZ0zhZJWeMIOktOsd0TaK6AZx2XEjKJ47WjD-lQwOuGWe6FaDpmmfGigAdkDdEgGCig_lT0OTrIjomCpoyyloKBcs_I2UIZt8wpUEtWACcroG1qBmLKvxktVtDekagLJ_ackecq-f-iFTkD9lkzKmcm0j8xhRsdcEclcBlTxVc_sKXdbYpEyaYqBR8Ro3y0Hd9xaaIwZKtvjZ5Q"/>
-</div>
-<div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
-<h3 class="text-3xl mb-3">Sansevieria 'Monolito'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-8">
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Colección Estructural</span>
-<span class="font-label text-lg font-bold text-primary">MXN $1,890</span>
-</div>
-<div class="space-y-6 mb-10">
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-outline">architecture</span>
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Interiorismo</span>
-<p class="font-body text-sm">Brutalismo / Industrial</p>
-</div>
-</div>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-outline">verified_user</span>
-<div>
-<span class="font-label text-[10px] uppercase tracking-widest text-outline block">Dificultad</span>
-<p class="font-body text-sm">Mínima — Purificadora y eterna</p>
-</div>
-</div>
-</div>
-<a class="inline-flex items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em]" href="sansevieria-monolito.html">Ver Detalles</a>
-</div>
-</div>
-<!-- Product Card 7 -->
-<div>
-<div class="aspect-[4/5] bg-surface-container-low mb-8">
-<img class="w-full h-full object-cover" data-alt="Round architectural cactus in a minimalist grey pot on a stone plinth with hard sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc4cB84P4MD2uimwOOS1A1u3Uf7AcDVHMquvhWpeyvb-ljh4QQK_ysOfMTC57KmMLQI_-u-UspBsaZzycZKcHgZ9rRgTQ0DlLlRaMXdPpXqJb9_WqcZkdimxgVvexm4ujTVQSKCzBMOx2ZqBfxHU6wjkPwNErxyd2yMe8-401PiBWLhzgIfeC4UAvYAnpvaSwEYqwLJk3UhHR7r9rtCpXc9wu55571AXgPqxo16Fv_ZGJp3Ia19eO6uLrZeIfDEtgRhRmNxbljDNw"/>
-</div>
-<h3 class="text-xl mb-3">Cactus 'Esfera'</h3>
-<div class="flex items-baseline justify-between gap-4 mb-6">
-<span class="font-body text-xs text-secondary uppercase tracking-widest">Colección Estructural</span>
-<span class="font-label text-base font-bold text-primary">MXN $1,320</span>
-</div>
-<div class="bg-surface-container p-6 mb-8">
-<p class="font-body text-sm italic leading-relaxed text-on-surface-variant">"La geometría perfecta de la naturaleza, contenida en un recipiente de concreto puro."</p>
-</div>
-<a class="inline-flex w-full items-center justify-center py-4 border border-primary text-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary hover:text-on-primary transition-all" href="cactus-esfera.html">Ver Detalles</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Seccion CTA de Asesoria -->
+
+<!-- CONTENEDOR DINAMICO PARA JAVASCRIPT -->
+<div id="dynamic-catalog"></div>
+
 <section class="mt-20 md:mt-32 px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
 <div class="bg-[#f0eee9] py-16 md:py-32 px-6 md:px-24 text-center relative overflow-hidden">
 <div class="relative z-10">
-<span class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-6 block">Asesoría Personalizada</span>
-<h2 class="text-3xl sm:text-4xl md:text-7xl mb-8 md:mb-10 max-w-4xl mx-auto leading-tight">Curamos el alma botánica de tu <span class="italic">santuario</span>.</h2>
-<p class="font-body text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto mb-10 md:mb-12">
-                        Nuestros expertos en diseño biofílico te ayudan a seleccionar las especies que mejor se adaptan a la arquitectura y luz de tu espacio.
-                    </p>
-<button class="w-full sm:w-auto px-10 py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.22em] md:tracking-[0.3em] hover:opacity-90 transition-opacity">Contactar con un Asesor</button>
+<span class="font-label text-[10px] uppercase tracking-[0.4em] text-secondary mb-6 block">Atención Personalizada</span>
+<h2 class="text-3xl sm:text-4xl md:text-7xl mb-8 md:mb-10 max-w-4xl mx-auto leading-tight">Forjamos el brillante legado de tus <span class="italic">recuerdos</span>.</h2>
+<a href="asesoria.html" class="inline-block px-10 py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.22em] md:tracking-[0.3em] hover:opacity-90 transition-opacity">Reservar con un Asesor</a>
 </div>
-<!-- Abstract decorative element -->
-<div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full border border-outline-variant/30 opacity-50 pointer-events-none"></div>
 </div>
 </section>
 </main>
 <footer class="w-full rounded-none border-t-0 bg-[#fbf9f4] dark:bg-[#18241a] mt-auto">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 px-4 sm:px-6 md:px-12 py-14 md:py-20 w-full max-w-[1920px] mx-auto">
-<div class="flex flex-col justify-between h-full">
-<span class="font-noto-serif text-xl italic text-[#705a49]">INTEMPORAL</span>
-<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] mt-8">© 2026 INTEMPORAL DIGITAL CONSERVATORY. ARCHITECTURAL INTEGRITY IN BOTANY.</p>
-</div>
-<div class="grid grid-cols-2 gap-8">
-<div class="flex flex-col gap-4">
-<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Explorar</span>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="index.html">Inicio</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">Pinterest</a>
-</div>
-<div class="flex flex-col gap-4">
-<span class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-[#18241a]">Servicio</span>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="sostenibilidad.html">Sostenibilidad</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="envios.html">Envíos</a>
-<a class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49] hover:text-[#18241a] transition-colors" href="terminos.html">Términos</a>
-</div>
-</div>
-<div class="flex flex-col justify-end items-start md:items-end text-left md:text-right">
-<p class="font-noto-serif text-lg italic text-[#18241a] max-w-xs mb-4">"Donde la arquitectura encuentra sus pulmones."</p>
-<div class="w-full h-px bg-outline-variant opacity-30 my-4"></div>
-<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">Atención Privada: concierge@intemporal.botany</p>
-</div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.15em] text-[#705a49]">© 2026 INTEMPORAL FINE JEWELRY.</p>
 </div>
 </footer>
-<script src="../assets/js/base-motion.js"></script>
-<script src="../assets/js/catalogo.js"></script>
+
+<script>
+// Motor de renderizado dinámico (Lee desde Github Pages o JSON local)
+fetch('../data/catalogo.json')
+  .then(res => res.json())
+  .then(data => {
+      const items = data.items || [];
+      const container = document.getElementById('dynamic-catalog');
+      
+      // Agrupar por colecciones
+      const collections = {};
+      items.forEach(item => {
+          if (!collections[item.coleccion]) collections[item.coleccion] = [];
+          collections[item.coleccion].push(item);
+      });
+
+      let html = '<section class="px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">';
+      
+      for (const [colName, colItems] of Object.entries(collections)) {
+          html += `
+          <div class="mb-32">
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-10 md:mb-12">
+              <h2 class="text-3xl md:text-4xl">${colName}</h2>
+              <span class="font-body italic text-secondary text-lg">— Exclusividad Atemporal</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-14 md:gap-y-24">
+          `;
+          
+          colItems.forEach(item => {
+              const tagHtml = item.estado ? `<div class="absolute top-4 right-4 bg-surface/70 backdrop-blur-md px-3 py-1 font-label text-[10px] uppercase tracking-widest">${item.estado}</div>` : '';
+              html += `
+              <div>
+                <div class="aspect-[4/5] bg-surface-container-low mb-8 relative">
+                  <img class="w-full h-full object-cover" alt="${item.nombre}" src="${item.imagen}"/>
+                  ${tagHtml}
+                </div>
+                <div class="px-2">
+                  <h3 class="text-2xl mb-3">${item.nombre}</h3>
+                  <div class="flex items-baseline justify-between gap-4 mb-4">
+                    <span class="font-label text-lg font-bold text-primary">${item.precio}</span>
+                  </div>
+                  <div class="space-y-4 mb-8">
+                    <div><span class="font-label text-[10px] uppercase tracking-widest text-outline block">Corte / Estilo</span><p class="font-body text-sm">${item.corte || 'Clásico'}</p></div>
+                    <div class="bg-surface-container p-6">
+                      <span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Nota</span>
+                      <p class="font-body text-sm italic leading-relaxed">"${item.nota || ''}"</p>
+                    </div>
+                  </div>
+                  <a class="inline-flex w-full items-center justify-center py-4 bg-primary text-on-primary font-label text-xs uppercase tracking-[0.2em] hover:bg-primary-container transition-all" href="producto.html?id=${item.id}">Ver Detalles</a>
+                </div>
+              </div>`;
+          });
+          
+          html += `</div></div>`;
+      }
+      html += '</section>';
+      container.innerHTML = html;
+  }).catch(err => console.error('Error cargando catalogo:', err));
+</script>
 </body></html>

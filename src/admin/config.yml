@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main # O master, dependiendo de tu repo
+
+media_folder: "src/img/catalogo" # Carpeta donde el CMS guarda las fotos nuevas
+public_folder: "../img/catalogo" # Ruta que la web lee para mostrar la foto
+
+collections:
+  - name: "catalogo_global"
+    label: "Catálogos Base"
+    files:
+      - label: "Catálogo de Joyería"
+        name: "joyas"
+        file: "src/data/catalogo.json" # Archivo donde se inyectarán las joyas
+        description: "Lista maestra de todo el inventario de la boutique."
+        fields:
+          - label: "Inventario"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "ID de la Página (ej. anillo-solitario)", name: "id", widget: "string"}
+              - {label: "Nombre de la Joya", name: "nombre", widget: "string"}
+              - {label: "Colección", name: "coleccion", widget: "select", options: ["Colección Oro", "Plata y Platino", "Gemas Clásicas", "Argollas de Matrimonio"]}
+              - {label: "Etiqueta Destacada (ej. Pieza Única, N/A para vacío)", name: "estado", widget: "string", required: false}
+              - {label: "Precio al público", name: "precio", widget: "string"}
+              - {label: "Fotografía", name: "imagen", widget: "image"}
+              - {label: "Corte / Estilo", name: "corte", widget: "string"}
+              - {label: "Material / Quilates", name: "material", widget: "string"}
+              - {label: "Consejo Gemológico Breve", name: "nota", widget: "text"}
